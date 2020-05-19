@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { MobileAccessibility } from 'phonegap-plugin-mobile-accessibility';
 export default {
   name: "Calculator",
   data() {
@@ -24,7 +25,7 @@ export default {
     
   },
   mounted() {
-
+    console.log("ADA Screen Reader on?: " + MobileAccessibility.isScreenReaderRunning(isScreenReaderRunningCallback))
   },
   methods: {
     enlarge() {
