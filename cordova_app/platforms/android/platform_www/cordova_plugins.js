@@ -49,59 +49,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-flashlight.Flashlight",
-    "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
-    "pluginId": "cordova-plugin-flashlight",
-    "clobbers": [
-      "window.plugins.flashlight"
-    ]
-  },
-  {
-    "id": "cordova-plugin-geolocation.geolocation",
-    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "clobbers": [
-      "navigator.geolocation"
-    ]
-  },
-  {
-    "id": "cordova-plugin-geolocation.PositionError",
-    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-    "pluginId": "cordova-plugin-geolocation",
-    "runs": true
-  },
-  {
-    "id": "cordova-plugin-headercolor.HeaderColor",
-    "file": "plugins/cordova-plugin-headercolor/www/HeaderColor.js",
-    "pluginId": "cordova-plugin-headercolor",
-    "clobbers": [
-      "cordova.plugins.headerColor"
-    ]
-  },
-  {
-    "id": "cordova-plugin-statusbar.statusbar",
-    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-    "pluginId": "cordova-plugin-statusbar",
-    "clobbers": [
-      "window.StatusBar"
-    ]
-  },
-  {
-    "id": "cordova-plugin-vibration.notification",
-    "file": "plugins/cordova-plugin-vibration/www/vibration.js",
-    "pluginId": "cordova-plugin-vibration",
-    "merges": [
-      "navigator.notification",
-      "navigator"
-    ]
-  },
-  {
-    "id": "phonegap-nfc.NFC",
-    "file": "plugins/phonegap-nfc/www/phonegap-nfc.js",
-    "pluginId": "phonegap-nfc",
-    "runs": true
-  },
-  {
     "id": "cordova-plugin-file.DirectoryEntry",
     "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
     "pluginId": "cordova-plugin-file",
@@ -275,6 +222,36 @@ module.exports = [
     "runs": true
   },
   {
+    "id": "cordova-plugin-flashlight.Flashlight",
+    "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
+    "pluginId": "cordova-plugin-flashlight",
+    "clobbers": [
+      "window.plugins.flashlight"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.geolocation",
+    "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "clobbers": [
+      "navigator.geolocation"
+    ]
+  },
+  {
+    "id": "cordova-plugin-geolocation.PositionError",
+    "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+    "pluginId": "cordova-plugin-geolocation",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-headercolor.HeaderColor",
+    "file": "plugins/cordova-plugin-headercolor/www/HeaderColor.js",
+    "pluginId": "cordova-plugin-headercolor",
+    "clobbers": [
+      "cordova.plugins.headerColor"
+    ]
+  },
+  {
     "id": "cordova-plugin-media.MediaError",
     "file": "plugins/cordova-plugin-media/www/MediaError.js",
     "pluginId": "cordova-plugin-media",
@@ -289,6 +266,70 @@ module.exports = [
     "clobbers": [
       "window.Media"
     ]
+  },
+  {
+    "id": "cordova-plugin-statusbar.statusbar",
+    "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+    "pluginId": "cordova-plugin-statusbar",
+    "clobbers": [
+      "window.StatusBar"
+    ]
+  },
+  {
+    "id": "cordova-plugin-vibration.notification",
+    "file": "plugins/cordova-plugin-vibration/www/vibration.js",
+    "pluginId": "cordova-plugin-vibration",
+    "merges": [
+      "navigator.notification",
+      "navigator"
+    ]
+  },
+  {
+    "id": "phonegap-nfc.NFC",
+    "file": "plugins/phonegap-nfc/www/phonegap-nfc.js",
+    "pluginId": "phonegap-nfc",
+    "runs": true
+  },
+  {
+    "id": "cordova-plugin-device.device",
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "pluginId": "cordova-plugin-device",
+    "clobbers": [
+      "device"
+    ]
+  },
+  {
+    "id": "cordova-plugin-network-information.network",
+    "file": "plugins/cordova-plugin-network-information/www/network.js",
+    "pluginId": "cordova-plugin-network-information",
+    "clobbers": [
+      "navigator.connection",
+      "navigator.network.connection"
+    ]
+  },
+  {
+    "id": "cordova-plugin-network-information.Connection",
+    "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+    "pluginId": "cordova-plugin-network-information",
+    "clobbers": [
+      "Connection"
+    ]
+  },
+  {
+    "id": "phonegap-plugin-mobile-accessibility.mobile-accessibility",
+    "file": "plugins/phonegap-plugin-mobile-accessibility/www/mobile-accessibility.js",
+    "pluginId": "phonegap-plugin-mobile-accessibility",
+    "clobbers": [
+      "window.MobileAccessibility"
+    ]
+  },
+  {
+    "id": "phonegap-plugin-mobile-accessibility.MobileAccessibilityNotifications",
+    "file": "plugins/phonegap-plugin-mobile-accessibility/www/MobileAccessibilityNotifications.js",
+    "pluginId": "phonegap-plugin-mobile-accessibility",
+    "clobbers": [
+      "MobileAccessibilityNotifications"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -296,15 +337,18 @@ module.exports.metadata =
 {
   "cordova-plugin-camera": "2.4.1",
   "cordova-plugin-dialogs": "1.3.4",
+  "cordova-plugin-file": "6.0.2",
   "cordova-plugin-flashlight": "3.2.0",
   "cordova-plugin-geolocation": "2.4.3",
   "cordova-plugin-headercolor": "1.0",
+  "cordova-plugin-media": "5.0.3",
   "cordova-plugin-statusbar": "2.4.1",
   "cordova-plugin-vibration": "2.1.6",
   "cordova-plugin-whitelist": "1.3.3",
   "phonegap-nfc": "0.6.6",
-  "cordova-plugin-file": "6.0.2",
-  "cordova-plugin-media": "5.0.3"
+  "cordova-plugin-device": "2.0.4-dev",
+  "cordova-plugin-network-information": "2.0.3-dev",
+  "phonegap-plugin-mobile-accessibility": "1.0.5-dev"
 };
 // BOTTOM OF METADATA
 });

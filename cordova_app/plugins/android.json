@@ -22,6 +22,9 @@
     "cordova-plugin-headercolor": {
       "PACKAGE_NAME": "vuejs.cordova.sample"
     },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "vuejs.cordova.sample"
+    },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "vuejs.cordova.sample"
     },
@@ -34,12 +37,18 @@
     "phonegap-nfc": {
       "PACKAGE_NAME": "vuejs.cordova.sample"
     },
-    "cordova-plugin-media": {
+    "phonegap-plugin-mobile-accessibility": {
       "PACKAGE_NAME": "vuejs.cordova.sample"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
+      "PACKAGE_NAME": "vuejs.cordova.sample"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "vuejs.cordova.sample"
+    },
+    "cordova-plugin-network-information": {
       "PACKAGE_NAME": "vuejs.cordova.sample"
     }
   }
