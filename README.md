@@ -6,34 +6,16 @@
 
 ![Demo screenshot](demo.png)
 
-## Build Setup
-
-```bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run serve
-
-# build for production to run in Cordova
-npm run build
-
-```
-
-## First Cordova build
-
-Run the command :
-
-```sh
+## To Build (1st setup only inside "[]")
+[ npm install ]
 npm run build
 cd cordova_app
-cordova platform add android
-cordova run # or build
+[ cordova platform add android ]
+cordova build android
+cordova run android
 ```
 
-## Next Cordova build
-
-```sh
+## Or just run this:
 npm run cordova_run # or cordova_build
 ```
 
