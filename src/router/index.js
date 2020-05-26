@@ -14,7 +14,10 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        KeepAlive: true
+      }
     },{
       path: '/vibration',
       name: 'Vibration',

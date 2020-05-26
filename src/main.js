@@ -7,6 +7,8 @@ import router from './router/index';
 import i18n from './i18n';
 import Vue2TouchEvents from "vue2-touch-events";
 
+import store from "./store";
+
 require('./assets/styles/main.css')
 Vue.use(Vue2TouchEvents, {
   disableClick: true,
@@ -16,6 +18,7 @@ Vue.config.productionTip = false
 
 const init = () => {
   new Vue({
+    el: '#app',
     vuetify,
     router,
     i18n,
